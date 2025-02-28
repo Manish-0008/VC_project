@@ -981,8 +981,9 @@ body {
     }
 
     .about-section {
-        background-size: inherit;
+        /* background-size: inherit; */ 
         padding-top: 50%;
+        background-position-x: right;
 
     }
 
@@ -1006,6 +1007,9 @@ body {
 
     .gallery a:last-child {
         display: none;
+    }
+    .banner_inner_content{
+        max-width: 90%;
     }
 }
 
@@ -1102,5 +1106,11 @@ body {
     }
     .partners-section{
         padding: 50px 0;
+    }
+    .button-container .btn{
+        padding: 10px 50px;
+    }
+    .about-content p{
+        text-align: justify;
     }
 }
