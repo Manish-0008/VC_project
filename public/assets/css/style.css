@@ -1074,6 +1074,7 @@ body {
 
     .about-section {
         background-color: #eeca92;
+        background-size: contain;
     }
 
     .past-participants-slider .slick-prev {
