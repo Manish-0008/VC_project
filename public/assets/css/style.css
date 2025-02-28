@@ -1,0 +1,1072 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #000 !important;
+}
+
+/* Custom Scrollbar CSS */
+
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(122, 153, 217)),
+            color-stop(0.72, rgb(73, 125, 189)),
+            color-stop(0.86, rgb(28, 58, 148)));
+}
+
+
+
+/* <<---------------------- Fonts CSS ------------------>>*/
+/* Antons FOnts */
+@font-face {
+    font-family: 'Anton';
+    src: url('../fonts/Anton-Regular.woff2') format('woff2'),
+        url('../fonts/Anton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Poppins Fonts   */
+
+@font-face {
+    font-family: 'poppins-black';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-blackitalic';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-extrabold';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-extrabolditalic';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-bolditalic';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-extralight';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-extralightitalic';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-italic';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+        url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-lightitalic';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-mediumitalic';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-thinitalic';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-thin';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins-semibolditalic';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Myraid Fonts   */
+
+@font-face {
+    font-family: 'myriadpro-bold';
+    src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-condensed';
+    src: url('../fonts/MyriadPro-Cond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-boldcondensed';
+    src: url('../fonts/MyriadPro-BoldCond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BoldCond.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-bolditalic';
+    src: url('../fonts/MyriadPro-BoldIt.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-boldcondenseditalic';
+    src: url('../fonts/MyriadPro-BoldCondIt.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BoldCondIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-condenseditalic';
+    src: url('../fonts/MyriadPro-CondIt.woff2') format('woff2'),
+        url('../fonts/MyriadPro-CondIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-regular';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-semibold';
+    src: url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-light';
+    src: url('../fonts/MyriadPro-Light.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'myriadpro-semibolditalic';
+    src: url('../fonts/MyriadPro-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/MyriadPro-SemiboldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Main BUtton CSS */
+
+.allBtn {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 4px 25px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.allBtn.colored {
+    background-color: #4f9a00;
+}
+
+.allBtn::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 200%;
+    height: 200%;
+    top: 80%;
+    left: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.allBtn:hover {
+    color: #000;
+}
+
+.allBtn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Banner CSS */
+
+.banner-section {
+    background-image: url(../images/banner_img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    /* height: 100vh; */
+    text-align: center;
+    padding: 40px 0;
+}
+
+.leaf_pattern {
+    position: absolute;
+    top: 0;
+}
+
+.leaf_pattern.left {
+    left: 0;
+}
+
+.leaf_pattern.right {
+    right: 0;
+}
+
+.para {
+    padding: 20px 0 10px 0;
+}
+
+.para span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.button-container .btn {
+    background-color: #8bc31f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 70px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transform: skewX(-15deg);
+    border-radius: 0px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 7px 5px 10px #00000045;
+}
+
+.button-container .btn:hover {
+    background-color: transparent;
+    border: 1px solid #8bc31f;
+    color: #8bc31f;
+}
+
+.button-container .btn span {
+    display: inline-block;
+    transform: skewX(15deg);
+}
+
+.banner_inner_content {
+    max-width: 46%;
+    margin: 0 auto;
+    border: 16px solid #ffffff61;
+    padding: 20px 10px;
+}
+
+.banner_inner_content h3 {
+    font-family: 'Anton';
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 4px 4px black;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.banner_inner_content h3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.banner_inner_content p {
+    font-weight: 500;
+    font-family: 'poppins-semibold';
+    color: #fff;
+    font-size: 22px;
+}
+
+.banner_inner_content hr {
+    border-color: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%)
+}
+
+
+/* About Us section CSS */
+
+.main-heading-area .subheading {
+    font-family: 'poppins-bolditalic';
+    font-size: 24px;
+    margin-bottom: 0;
+    color: #67970a;
+}
+
+.main-heading-area .heading {
+    font-family: 'poppins-semibold';
+    font-size: 50px;
+}
+
+
+.video-section {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+    z-index: 9;
+}
+
+.about_pattern {
+    position: absolute;
+    right: -100px;
+    bottom: -50px;
+    z-index: 0;
+}
+
+
+.video-section img {
+    width: 100%;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.video-section:hover .video-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background: rgba(7, 7, 7, 0.373);
+}
+
+.play-button i {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+.about-section {
+    background-image: url(../images/about_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: -100px;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 80px;
+}
+
+#videoModal .modal-content {
+    border-radius: 0 !important;
+    position: relative;
+}
+
+#videoModal .modal-content .modal-body {
+    padding: 10px;
+}
+
+#videoModal button.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#videoModal button.btn-close:focus {
+    box-shadow: none;
+}
+
+
+/* Past Participants Section CSS */
+
+.past-participants {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content-heading {
+    text-align: center;
+    position: relative;
+}
+
+.content-heading:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #608d09;
+}
+
+.about-content p i {
+    font-weight: 500;
+}
+
+.content-heading h3 {
+    font-family: 'Anton';
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.content-heading p {
+    font-family: 'poppins-medium';
+    color: #656363;
+}
+
+.content-heading h2 {
+    font-family: 'Anton';
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+
+/* Past Participant CSS */
+.past-participants-slider {
+    padding: 0 10px;
+}
+
+.past-participants-slider .slick-slide {
+    padding: 0 20px;
+
+}
+
+.past-participants-slider .slick-list {
+    padding: 50px 0 20px;
+}
+
+.participants-card {
+    box-shadow: 0 0 20px #0000005a;
+}
+
+.participants-card .names {
+    padding: 10px;
+}
+
+.participants-card .names h4 {
+    font-family: 'poppins-semibold';
+    color: #8bc31f;
+    margin-bottom: 0;
+}
+
+.participants-card .names p {
+    font-family: 'poppins-semibold';
+    color: #555555;
+    font-size: 18px;
+}
+
+.slick-prev:before {
+    content: inherit !important;
+}
+
+.slick-next:before {
+    content: inherit !important;
+}
+
+.slick-next,
+.slick-prev {
+    width: inherit !important;
+    height: inherit !important;
+}
+
+.slick-dots li {
+    height: 10px !important;
+    width: 10px !important;
+    background-color: #bebebe;
+    border-radius: 10px;
+}
+
+.slick-dots li.slick-active {
+    background-color: #8bc31f;
+}
+
+.slick-dots li button {
+    width: inherit !important;
+    height: inherit !important;
+    padding: 0 !important;
+}
+
+.slick-dots li button:before {
+    content: inherit;
+    display: none;
+}
+
+.btnDiv {
+    margin-top: 50px;
+}
+
+
+/* Advertiser section CSS  */
+
+.advertiser-section {
+    background-image: url(../images/advertiser_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    position: relative;
+}
+
+.advertiser-section::before {
+    content: "";
+    background-image: url(../images/add_pattern.png);
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -50px;
+    transform: translate(0%, -10%);
+    left: 100px;
+
+    /* Add rotation animation */
+    /* animation: rotate 5s linear infinite; */
+}
+
+/* Define the rotation animation */
+/* @keyframes rotate {
+    from {
+        transform: translate(0%, -10%) rotate(0deg);
+    }
+    to {
+        transform: translate(0%, -10%) rotate(360deg);
+    }
+} */
+
+.ad_content {
+    text-align: center;
+}
+
+.ad_content p {
+    margin: 40px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Partners Section CSS */
+
+.partners-section {
+    padding: 50px;
+}
+
+.partners-slider .slick-slide {
+    padding: 0 10px;
+}
+
+.partners-slider .slick-list {
+    padding: 50px 0;
+}
+
+.partners-logo p {
+    color: #fff;
+    padding: 2px;
+    background-color: #333;
+    text-align: center;
+}
+
+.partners-logo img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    object-fit: contain;
+    background: #f7f7f7;
+}
+
+/* Attend section CSS */
+.attend-section {
+    background-image: url(../images/attend_bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+.attend-section::before {
+    content: "";
+    background-image: url(../images/attent_pattern.png);
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -50px;
+    transform: translate(0%, -10%);
+    right: 100px;
+
+    /* Add rotation animation */
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(0%, -10%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(0%, -10%) rotate(360deg);
+    }
+}
+
+.attend-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.attend-div h2 {
+    font-family: 'Anton';
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 1px 4px 3px #333;
+}
+
+/* Gallery Section CSS */
+
+.gallery-section {
+    padding: 50px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+    box-shadow: 3px 20px 40px #0000005e;
+}
+
+.gallery a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 0px;
+    /* Optional: Rounded corners */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 9;
+    transition: opacity 0.3sease;
+}
+
+.gallery a::after {
+    content: url(../images/search.svg);
+    width: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.gallery a:hover::before,
+.gallery a:hover::after {
+    opacity: 1;
+}
+
+.gallery a:hover img {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Responsive for Tablets (3 per row) */
+@media (max-width: 992px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive for Mobile (1 per row) */
+@media (max-width: 576px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.footer {
+    background-image: url(../images/footer_bg.png);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    margin-top: -129px;
+    position: relative;
+    z-index: -1;
+    position: relative;
+}
+
+.footer_pattern {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.footer_pattern img {
+    width: 200px;
+}
+
+.footer_detail {
+    position: absolute;
+    bottom: 100px;
+    z-index: 9;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+
+.footer_div {
+    background: #608d09;
+    padding: 20px;
+    box-shadow: 0 0 30px #000;
+    margin-top: 30px;
+}
+
+.footer_div h5 {
+    color: #fff;
+    margin-bottom: 0;
+    font-family: 'Anton';
+    font-weight: 200;
+
+}
+
+
+.bordbot {
+    border-bottom: 2px dashed #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'poppins-light';
+}
+
+.copyright p,
+.copyright i {
+    color: #ededed;
+}
+
+.copyright i {
+    margin-right: 4px;
+}
+
+@media (max-width:800px) {
+    .about_pattern {
+        right: inherit;
+    }
+
+    .about-section {
+        background-size: inherit;
+        padding-top: 50%;
+
+    }
+
+    .about-content {
+        padding-bottom: 40px;
+    }
+
+    .attend-div h2 {
+        font-size: 38px;
+    }
+
+    .attend-section::before {
+        width: 100px;
+        height: 100px;
+    }
+
+    .d-flex.justify-content-center.flex-wrap {
+        justify-content: space-between !important;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width:500px) {
+    .banner_inner_content {
+        max-width: 100%;
+    }
+
+    .leaf_pattern {
+        display: none;
+    }
+
+    .logo.intersec_logo a img {
+        width: 230px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container .btn {
+        width: 80%;
+        margin: auto;
+    }
+
+    section.advertiser-section {
+        margin-top: 100px;
+    }
+
+    .advertiser-section::before {
+        width: 140px;
+        height: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .attend-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attend-div h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .attend-section {
+        margin-top: 100px;
+    }
+
+    .footer_detail {
+        width: 85%;
+    }
+
+    .about-section {
+        padding-top: 300px;
+    }
+
+    .about-section {
+        background-color: #eeca92;
+    }
+
+    .slick-prev {
+        left: -10px;
+    }
+    .allBtn{
+        font-size: 18px;
+    }
+}
