@@ -28,7 +28,7 @@ const Footer = () => {
 
           <div className="row">
             <div className="col-lg-6 col-md-12 text-center">
-              <h6 className="text-light">VIVEK SHETH</h6>
+              <h6 className="text-light text-md-center text-start">VIVEK SHETH</h6>
               <div className="d-flex justify-content-center flex-wrap">
                 <p className="text-light">
                   <FaPhone /> +91 9876543210
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-12 text-center">
-              <h6 className="text-light">RAHUL VERMA</h6>
+              <h6 className="text-light text-md-center text-start">RAHUL VERMA</h6>
               <div className="d-flex justify-content-center flex-wrap">
                 <p className="text-light">
                   <FaPhone /> +91 9123456789
